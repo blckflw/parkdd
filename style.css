@@ -1,0 +1,433 @@
+@media (min-width:1064px) {
+
+    body {
+        background-color: #111111;
+        height: 100vh;
+        margin: 0rem;
+        overflow-x: hidden;
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    @keyframes rotate {
+        from {
+            rotate: 0deg;
+        }
+
+        50% {
+            scale: 1 1.5;
+        }
+
+        to {
+            rotate: 360deg;
+        }
+    }
+
+    #blob {
+        background-color: white;
+        height: 34vmax;
+        aspect-ratio: 1;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        border-radius: 50%;
+        background: linear-gradient(to right, #84FE97, #00bbff);
+        animation: rotate 20s infinite;
+        opacity: 0.8;
+    }
+
+    #blur {
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        backdrop-filter: blur(12vmax);
+    }
+
+    .quote {
+        text-align: center;
+        font-family: 'Syne', sans-serif;
+        font-size: clamp(3rem, 5vw, 10rem);
+        color: white;
+        white-space: nowrap;
+        padding: 0rem clamp(1rem, 2vw, 3rem);
+        border-radius: clamp(0.4rem, 0.75vw, 1rem);
+        margin: 0rem;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        translate: -50% -50%;
+        z-index: 3;
+    }
+
+    #links {
+        margin: 5vh;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+        padding: 1rem;
+    }
+
+    .image {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 10;
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -54vh;
+        width: 400px;
+        /* Need a specific value to work */
+    }
+
+    p {
+        color: white;
+        font-family: sans-serif;
+    }
+
+    #features {
+        background-color: #1b1f24;
+        box-sizing: border-box;
+        width: 100%;
+        overflow-x: hidden;
+        padding: 50px;
+    }
+
+    h3 {
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+    }
+
+    .box {
+        z-index: 999;
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        background-color: black;
+        border: 2px solid #84fe98;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+        margin: 20x;
+        margin-top: 5vh;
+    }
+
+    .box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.2), 0px 0px 50px #84fe98;
+        outline: none;
+    }
+
+    .box i {
+        font-size: 60px;
+        color: #fff;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .box h3 {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .box p {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .container {
+        background-color: #111111;
+        z-index: 1000;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(12vmax);
+    }
+
+    .container2 {
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(12vmax);
+    }
+
+    #footer {
+        font-family: 'DM Sans', sans-serif;
+        background-color: black;
+        padding: 30px;
+        text-align: center;
+    }
+
+    p {
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    button {
+        font-family: 'DM Sans', sans-serif;
+        margin-left: 20px;
+        background-color: black;
+        color: white;
+        padding: 15px;
+        width: 9em;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: 0.2s linear;
+        font-weight: 600;
+        cursor: poDM Sans;
+        border: 1px solid black;
+    }
+
+    button:hover {
+        background-color: #2d2d2d;
+    }
+
+    #information {
+        width: auto;
+        text-align: left;
+        margin-left: calc(0% + 19vw);
+        margin-right: calc(0% + 19vw);
+        margin-top: 9vh;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 9vh;
+    }
+
+    .why1 {
+        margin-right: 10vh;
+    }
+
+    .p {
+        width: 60vh;
+    }
+
+    h1 {
+        color: white;
+    }
+}
+
+@media (max-width:1064px) {
+    #information {
+        width: auto;
+        text-align: left;
+        margin-left: calc(0% + 19vw);
+        margin-right: calc(0% + 19vw);
+        margin-top: 9vh;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 9vh;
+    }
+
+    body {
+        background-color: #111111;
+        height: 100vh;
+        margin: 0rem;
+        overflow-x: hidden;
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    @keyframes rotate {
+        from {
+            rotate: 0deg;
+        }
+
+        50% {
+            scale: 1 1.5;
+        }
+
+        to {
+            rotate: 360deg;
+        }
+    }
+
+    #blob {
+        background-color: white;
+        height: 34vmax;
+        aspect-ratio: 1;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        translate: -50% -50%;
+        border-radius: 50%;
+        background: linear-gradient(to right, #84FE97, #00bbff);
+        animation: rotate 20s infinite;
+        opacity: 0.8;
+    }
+
+    #blur {
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        backdrop-filter: blur(12vmax);
+    }
+
+    .quote {
+        text-align: center;
+        font-family: 'Syne', sans-serif;
+        font-size: clamp(3rem, 5vw, 10rem);
+        color: white;
+        white-space: nowrap;
+        padding: 0rem clamp(1rem, 2vw, 3rem);
+        border-radius: clamp(0.4rem, 0.75vw, 1rem);
+        margin: 0rem;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        translate: -50% -50%;
+        z-index: 3;
+    }
+
+    #links {
+        margin: 5vh;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+        padding: 1rem;
+    }
+
+    .image {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 10;
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -54vh;
+        width: 400px;
+        /* Need a specific value to work */
+    }
+
+    p {
+        color: white;
+        font-family: sans-serif;
+    }
+
+    #features {
+        background-color: #1b1f24;
+        box-sizing: border-box;
+        width: 100%;
+        overflow-x: hidden;
+        padding: 50px;
+    }
+
+    h3 {
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+    }
+
+    .box {
+        z-index: 999;
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        background-color: #000;
+        border: 2px solid #84fe98;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+        margin: 20x;
+        margin-top: 5vh;
+    }
+
+    .box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 10px 100px rgba(0, 0, 0, 0.2), 0px 0px 50px #84fe98;
+        outline: none;
+    }
+
+    .box i {
+        font-size: 60px;
+        color: #fff;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .box h3 {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .box p {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .container {
+        background-color: #111111;
+        z-index: 1000;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(12vmax);
+    }
+
+    .container2 {
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(12vmax);
+    }
+
+    #footer {
+        font-family: 'DM Sans', sans-serif;
+        background-color: black;
+        padding: 30px;
+        text-align: center;
+    }
+
+    p {
+        font-family: 'DM Sans', sans-serif;
+    }
+
+    button {
+        font-family: 'DM Sans', sans-serif;
+        margin-left: 20px;
+        background-color: black;
+        color: white;
+        padding: 15px;
+        width: 9em;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: 0.2s linear;
+        font-weight: 600;
+        cursor: poDM Sans;
+        border: 1px solid black;
+    }
+
+    button:hover {
+        background-color: #2d2d2d;
+    }
+
+    .why1 {
+        margin-right: 10vh;
+    }
+
+    .p {
+        width: 60vh;
+    }
+
+    h1 {
+        color: white;
+    }
